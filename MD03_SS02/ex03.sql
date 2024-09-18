@@ -32,12 +32,6 @@ donGiaXuat DOUBLE,
 donSoLuongXuat INT,
 PRIMARY KEY(soPx, maVt)
 );
-CREATE TABLE NgayCungCap(
-maNCC INT,
-tenNCC VARCHAR(255),
-diaChi VARCHAR(255),
-soDienThoai VARCHAR(11)
-);
 CREATE TABLE DonDatHang(
 soDH INT AUTO_INCREMENT PRIMARY KEY,
 maNCC INT REFERENCES NgayCungCap(maNCC),
