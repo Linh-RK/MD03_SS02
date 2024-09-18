@@ -8,7 +8,7 @@ cAge INT
 CREATE TABLE orders(
 oId INT AUTO_INCREMENT PRIMARY KEY,
 cid INT ,
-oDate DATETIME(255),
+oDate DATETIME,
 oTotalPrice DOUBLE
 );
 CREATE TABLE customers(
