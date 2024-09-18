@@ -1,0 +1,25 @@
+CREATE DATABASE QuanLyBanHang;
+USE QuanLyBanHang;
+CREATE TABLE customers(
+cid INT AUTO_INCREMENT PRIMARY KEY,
+cName VARCHAR(255),
+cAge INT
+);
+CREATE TABLE orders(
+oId INT AUTO_INCREMENT PRIMARY KEY,
+cid INT ,
+oDate DATETIME(255),
+oTotalPrice DOUBLE
+);
+CREATE TABLE customers(
+pId INT AUTO_INCREMENT PRIMARY KEY,
+pName VARCHAR(255),
+pPrice DOUBLE
+);
+CREATE TABLE orderDetail(
+oId INT,
+pId INT,
+PRIMARY KEY(oId, pId),
+odQuantity INT
+);
+
